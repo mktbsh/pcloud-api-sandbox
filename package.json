@@ -17,11 +17,14 @@
     "test:types": "tsc --project tsconfig.check.json"
   },
   "dependencies": {
+    "@tanstack/react-router": "^1.56.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
+    "@tanstack/router-devtools": "^1.56.5",
+    "@tanstack/router-plugin": "^1.56.4",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react-swc": "^3.7.0",
