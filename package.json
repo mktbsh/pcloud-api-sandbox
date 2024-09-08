@@ -7,17 +7,26 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "fix": "run-s fix:**",
+    "fix:fmt": "biome format --write ./src",
+    "fix:lint": "biome lint --write ./src",
+    "test": "run-p test:**",
+    "test:fmt": "biome format ./src",
+    "test:lint": "biome lint ./src",
+    "test:types": "tsc --project tsconfig.check.json"
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react-swc": "^3.7.0",
     "globals": "^15.9.0",
+    "npm-run-all2": "^6.2.2",
     "typescript": "^5.5.4",
     "vite": "^5.4.3"
   }
